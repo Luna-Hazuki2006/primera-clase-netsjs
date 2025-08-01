@@ -8,7 +8,7 @@ import { CategoriasModule } from './categorias/categorias.module';
 
 @Module({
   imports: [ProductosModule, SaludoModule, CategoriasModule],
-  controllers: [AppController, ProductosController],
+  controllers: [AppController],
   providers: [AppService],
 })
 export class AppModule {}
