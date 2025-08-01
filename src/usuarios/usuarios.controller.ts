@@ -3,7 +3,7 @@ import { Creacion } from './dto/creacion/creacion';
 
 @Controller('usuarios')
 export class UsuariosController {
-    constructor(private readonly productos: UsuariosController) {}
+    constructor(private readonly usuarios: UsuariosController) {}
 
     @Post('/register')
     mostrarProductos(@Body() datos : Creacion, @Res() respuesta : Response) {
