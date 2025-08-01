@@ -3,7 +3,11 @@ import { Creacion } from './dto/creacion/creacion';
 
 @Injectable()
 export class UsuariosService {
+    private usuarios : Creacion[] = [];
+
     registrarUsuario(datos : Creacion) {
-        // return datos
+        const nuevoUsuario = datos;
+        this.usuarios.push(nuevoUsuario);
+        return nuevoUsuario;
     }
 }
