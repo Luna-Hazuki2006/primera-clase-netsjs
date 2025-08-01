@@ -8,6 +8,7 @@ export class UsuariosController {
 
     @Post('/register')
     registrar(@Body() datos : Creacion, @Res() respuesta : Response) {
-
+        this.usuarios.registrarUsuario(datos)
+        
     }
 }
